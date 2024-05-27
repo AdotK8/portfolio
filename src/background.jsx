@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const BackgroundStars = () => {
   useEffect(() => {
-    const numStars = 100; // Adjust the number of stars as needed
+    const numStars = 250;
     const container = document.querySelector('.background-stars');
     const width = container.offsetWidth;
     const height = container.offsetHeight;
@@ -10,14 +10,13 @@ const BackgroundStars = () => {
     for (let i = 0; i < numStars; i++) {
       const star = document.createElement('div');
       star.className = 'star';
-      star.classList.add(getRandomSize()); // Add random size class
+      star.classList.add(getRandomSize());
       star.style.left = `${Math.random() * width}px`;
       star.style.top = `${Math.random() * height}px`;
       container.appendChild(star);
     }
 
     return () => {
-      // Cleanup function to remove stars when the component unmounts
       container.innerHTML = '';
     };
   }, []);

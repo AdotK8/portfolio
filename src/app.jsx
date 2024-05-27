@@ -2,6 +2,7 @@
 
 import React from 'react';
 import BackgroundStars from './background';
+import Shapes from './shapes';
 import './styles/app.scss';
 
 function NavBar() {
@@ -12,10 +13,10 @@ export default function App() {
   return (
     <div className="App">
       <BackgroundStars />
-      <NavBar />
-      <div className="content" style={{ height: '200vh', padding: '20px' }}>
-        <h1>Scrolling Content</h1>
-        <p>Add your long content here...</p>
+      <div className="scrollable-content">
+        <Shapes />
+        <NavBar />
+        <div className="content"></div>
       </div>
     </div>
   );
