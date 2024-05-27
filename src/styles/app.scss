@@ -1,0 +1,72 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+//background scss
+
+.background-stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinklingOpacity linear infinite;
+}
+
+.star.s {
+  width: 1px;
+  height: 1px;
+  animation-duration: 2s;
+}
+
+.star.m {
+  width: 2px;
+  height: 2px;
+  animation-duration: 4s;
+}
+
+.star.l {
+  width: 3px;
+  height: 3px;
+  animation-duration: 6s;
+}
+
+.star.xl {
+  width: 4px;
+  height: 4px;
+  animation-duration: 3s;
+}
+//twinkling animation for stars
+@keyframes twinklingOpacity {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.nav-bar,
+.content {
+  color: white;
+}
