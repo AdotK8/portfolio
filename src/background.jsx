@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
+import './styles/background.scss';
 
 const BackgroundStars = () => {
   useEffect(() => {
-    const numStars = 250;
+    const numStars = 100;
     const container = document.querySelector('.background-stars');
     const width = container.offsetWidth;
     const height = container.offsetHeight;

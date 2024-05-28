@@ -1,0 +1,89 @@
+.background-stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(27, 27, 27);
+  z-index: -2;
+  > .star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinklingOpacity linear infinite;
+  }
+  > .star.s {
+    width: 1px;
+    height: 1px;
+    animation-duration: 2s;
+  }
+  > .star.m {
+    width: 2px;
+    height: 2px;
+    animation-duration: 4s;
+  }
+  > .star.l {
+    width: 3px;
+    height: 3px;
+    animation-duration: 6s;
+  }
+  > .star.xl {
+    width: 4px;
+    height: 4px;
+    animation-duration: 3s;
+  }
+}
+
+//twinkling animation for stars
+@keyframes twinklingOpacity {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+//scss for shapes in background
+
+.shape-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+
+  > .shape {
+    background: #4777e610;
+    background: -webkit-radial-gradient(circle, #7c47e60c 0%, #8d54e90b 100%);
+    background: radial-gradient(circle, #7147e613 0%, #8d54e914 100%);
+    opacity: 0.7;
+    position: absolute;
+  }
+  > .shape1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 42% 58% 76% 24% / 46% 70% 30% 54%;
+    top: 150px;
+    left: 450px;
+  }
+  > .shape2 {
+    width: 400px;
+    height: 400px;
+    border-radius: 14% 80% 58% 35% / 10% 62% 27% 82%;
+    top: -50px;
+    left: 1200px;
+  }
+  > .shape3 {
+    width: 400px;
+    height: 400px;
+    border-radius: 50% 100% 79% 100% / 92% 100% 100% 54%;
+    top: 550px;
+    left: -100px;
+  }
+}
