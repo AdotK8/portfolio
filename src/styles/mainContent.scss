@@ -27,11 +27,12 @@
   padding: 1rem;
   width: 100vw;
   box-sizing: border-box;
-  background-color: transparent; /* Initial transparent background */
-  transition: background-color 0.3s ease; /* Smooth background transition */
+  background-color: transparent; //Initial transparent background
+  transition: background-color 0.3s ease;
 
-  &.with-background {
-    background-color: rgba(0, 0, 0, 0.7); /* Background color on scroll */
+  &.active {
+    background-color: rgba(43, 43, 43, 0.302);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
 
   > .nav-item {
@@ -53,24 +54,25 @@
   }
 }
 
+//smaller screen properties
 @media (max-width: 650px) {
   .nav-bar {
-    justify-content: space-around; /* Ensure icons are spaced evenly */
-    padding: 1rem 1rem; /* Adjust padding for smaller screens */
+    justify-content: space-around;
+    padding: 1rem 1rem;
 
     > .nav-item {
-      margin-right: 0; /* Remove margin on smaller screens */
-      flex: 1; /* Allow items to grow and take up space */
-      justify-content: center; /* Center icons horizontally */
-      align-items: center; /* Center icons vertically */
-      text-align: center; /* Center text inside the flex item */
+      margin-right: 0;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
 
       > .nav-text {
-        display: none; /* Hide the text on smaller screens */
+        display: none; // Hide the text on smaller screens
       }
 
       > .nav-icon {
-        margin-right: 0; /* Remove margin between icon and text */
+        margin-right: 0;
       }
     }
   }

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import userIcon from './assets/account-outline.svg';
 import xmlIcon from './assets/xml.svg';
 import homeIcon from './assets/home-outline.svg';
@@ -18,8 +19,20 @@ const MainContent = () => {
 };
 
 const NavBar = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 40) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener('scroll', changeBackground);
+
   return (
-    <div className="nav-bar">
+    <div className={navbar ? 'nav-bar active' : 'nav-bar'}>
       <NavItem icon={homeIcon} text="Home" />
       <NavItem icon={userIcon} text="About Me" />
       <NavItem icon={xmlIcon} text="Projects" />
