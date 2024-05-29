@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import userIcon from './assets/account-outline.svg';
 import xmlIcon from './assets/xml.svg';
 import homeIcon from './assets/home-outline.svg';
 import mailIcon from './assets/email-outline.svg';
+import Home from './Home';
 import './styles/mainContent.scss';
 
 const Content = () => {
@@ -15,7 +16,11 @@ const Content = () => {
 };
 
 const MainContent = () => {
-  return <div className="content"></div>;
+  return (
+    <div className="content">
+      <Home />
+    </div>
+  );
 };
 
 const NavBar = () => {
