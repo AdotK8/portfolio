@@ -4,6 +4,7 @@ import xmlIcon from './assets/xml.svg';
 import homeIcon from './assets/home-outline.svg';
 import mailIcon from './assets/email-outline.svg';
 import Home from './Home';
+import About from './about';
 import './styles/mainContent.scss';
 
 const Content = () => {
@@ -19,6 +20,7 @@ const MainContent = () => {
   return (
     <div className="content">
       <Home />
+      <About />
     </div>
   );
 };

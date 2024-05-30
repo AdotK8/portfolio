@@ -58,6 +58,11 @@
 
 //smaller screen properties
 @media (max-width: 1000px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
   .home-section {
     flex-direction: column;
     padding: 0 2rem;
@@ -81,6 +86,6 @@
 
   #home-moving-text {
     color: rgb(180, 100, 241);
-    text-align: left; /* Ensure the changing text is aligned to the left */
+    text-align: left;
   }
 }
