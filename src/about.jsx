@@ -39,15 +39,23 @@ const About = () => {
           If I don't know it, <span>I figure it out</span>
         </h1>
         <p>
-          <span>Committed to the idea of life-long learning, </span>I am
-          passionate about web development and the endless possibilities it
-          offers. I am always seeking new challenges and opportunities to grow
-          and improve as a developer.
+          Committed to the idea of life-long learning, I am passionate about web
+          development and the endless possibilities it offers. I am always
+          seeking new challenges and opportunities to grow and improve as a
+          developer.
         </p>
         <p>
-          Whether working on a personal project or collaborating with a team, I
-          am committed to delivering high-quality and scalable web applications
-          that meet the needs of users and businesses.
+          Building things from scratch is what drives me, and is why after
+          graduating with a masters in electrical engineering I went on to start
+          multiple businesses, with the most recent being a digital real estate
+          and media agency. This blend of technical expertise and business
+          acumen has equipped me with a keen understanding of user needs, and
+          the ability to align technical solutions to business goals.
+        </p>
+        <p>
+          Now, I am eager to focus more on software development, rekindling my
+          love for the technical challenges and continuous learning I enjoyed
+          during my education.
         </p>
       </div>
       <div className="about-icons-container">

@@ -3,7 +3,7 @@ import './styles/background.scss';
 
 const BackgroundStars = () => {
   useEffect(() => {
-    const numStars = 150;
+    const numStars = 350;
     const container = document.querySelector('.background-stars');
     const width = container.offsetWidth;
     const height = container.offsetHeight;
