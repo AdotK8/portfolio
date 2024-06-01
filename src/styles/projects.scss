@@ -1,0 +1,63 @@
+.projects-section {
+  padding: 3rem;
+
+  .project {
+    padding-left: 50px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom: 2rem;
+    position: relative;
+
+    .image-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-image {
+      width: 500px;
+      height: 300px;
+      opacity: 0.8;
+      object-fit: cover;
+      z-index: 3;
+    }
+
+    .project-textbox {
+      padding: 2rem;
+      max-width: 50%;
+      background-color: rgba(64, 64, 64, 0.247);
+      backdrop-filter: blur(10px);
+      z-index: 5;
+      margin-top: -10px;
+      transition: transform 0.5s ease-out;
+
+      h2 {
+        color: rgb(180, 100, 241);
+        font-weight: 300;
+        font-size: 2rem;
+      }
+
+      hr {
+        margin: 1rem 0;
+        border: none;
+        height: 0.5px;
+        background-color: rgb(180, 100, 241);
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.project-icon-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-icon {
+  height: 40px;
+  margin-left: 10px;
+}

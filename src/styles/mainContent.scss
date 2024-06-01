@@ -12,7 +12,7 @@
     flex-direction: column;
     position: relative;
     z-index: 1;
-    height: 200vh;
+    height: 500vh;
     padding: 20px;
   }
 }
@@ -29,7 +29,7 @@
   padding: 1rem;
   width: 100vw;
   box-sizing: border-box;
-  background-color: transparent; //Initial transparent background
+  background-color: transparent;
   transition: background-color 0.3s ease;
   z-index: 5;
   backdrop-filter: blur(0);
@@ -37,7 +37,7 @@
   &.active {
     background-color: rgba(64, 64, 64, 0.247);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* Add this line */
+    backdrop-filter: blur(10px);
   }
 
   > .nav-item {
