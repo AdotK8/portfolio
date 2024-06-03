@@ -20,6 +20,7 @@
       opacity: 0.8;
       object-fit: cover;
       z-index: 3;
+      border-radius: 10px;
     }
 
     .project-textbox {
@@ -30,6 +31,7 @@
       z-index: 5;
       margin-top: -10px;
       transition: transform 0.5s ease-out;
+      border-radius: 10px;
 
       h2 {
         color: rgb(180, 100, 241);
@@ -60,4 +62,13 @@
 .project-icon {
   height: 40px;
   margin-left: 10px;
+  z-index: 1000;
+  transition:
+    transform 0.3s ease,
+    fill 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    color: rgb(180, 100, 241);
+  }
 }
