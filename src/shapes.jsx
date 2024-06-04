@@ -6,6 +6,11 @@ const Shapes = () => {
       <div className="shape1 shape"></div>
       <div className="shape2 shape"></div>
       <div className="shape3 shape"></div>
+      <div className="shape4 shape"></div>
+      <div className="shape5 shape"></div>
+      <div className="shape6 shape"></div>
+      <div className="shape7 shape"></div>
+      <div className="shape8 shape"></div>
     </div>
   );
 };

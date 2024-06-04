@@ -6,6 +6,7 @@ import mailIcon from './assets/email-outline.svg';
 import Home from './home';
 import About from './about';
 import Projects from './projects';
+import Contact from './contact';
 import './styles/mainContent.scss';
 
 const Content = () => {
@@ -23,6 +24,7 @@ const MainContent = () => {
       <Home />
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 };
