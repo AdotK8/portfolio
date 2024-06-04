@@ -89,15 +89,19 @@
   }
 }
 
-.project-icon {
-  height: 40px;
-  z-index: 1000;
-  transition:
-    transform 0.3s ease,
-    fill 0.3s ease;
+.project-icon-container {
+  display: flex;
+  justify-content: flex-end;
+  .project-icon {
+    height: 40px;
+    z-index: 1000;
+    transition:
+      transform 0.3s ease,
+      fill 0.3s ease;
 
-  &:hover {
-    transform: scale(1.2);
-    color: rgb(180, 100, 241);
+    &:hover {
+      transform: scale(1.2);
+      color: rgb(180, 100, 241);
+    }
   }
 }
