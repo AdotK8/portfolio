@@ -1,9 +1,11 @@
+@import './colors.scss';
 .projects-section {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 3rem;
 
   > .project {
     display: flex;
@@ -55,14 +57,13 @@
   border-radius: 10px;
   display: flex;
   padding: 2rem;
-  /* Add the metal-like background */
   background: linear-gradient(135deg, #333333, #444444);
   background-size: 400% 400%;
   animation: metalBackground 10s infinite alternate;
   > .project-textbox {
     width: 100%;
     > h2 {
-      color: rgb(180, 100, 241);
+      color: $main-purple-tone;
       font-weight: 300;
       font-size: 2rem;
     }
@@ -71,7 +72,7 @@
       margin: 1rem 0;
       border: none;
       height: 0.5px;
-      background-color: rgb(180, 100, 241);
+      background-color: $main-purple-tone;
     }
 
     > p {
@@ -90,7 +91,7 @@
       justify-content: center;
     }
 
-    .project-right > {
+    .project-right {
       border-radius: 0 0 10px 10px;
       justify-content: center;
     }
@@ -109,7 +110,7 @@
 
     &:hover {
       transform: scale(1.2);
-      color: rgb(180, 100, 241);
+      color: $main-purple-tone;
     }
   }
 }

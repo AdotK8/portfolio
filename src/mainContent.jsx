@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import userIcon from './assets/account-outline.svg';
 import xmlIcon from './assets/xml.svg';
 import homeIcon from './assets/home-outline.svg';
@@ -9,16 +10,16 @@ import Projects from './projects';
 import Contact from './contact';
 import './styles/mainContent.scss';
 
-const Content = () => {
+function Content() {
   return (
     <>
       <NavBar />
       <MainContent />
     </>
   );
-};
+}
 
-const MainContent = () => {
+function MainContent() {
   return (
     <div className="content">
       <Home />
@@ -27,9 +28,9 @@ const MainContent = () => {
       <Contact />
     </div>
   );
-};
+}
 
-const NavBar = () => {
+function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
@@ -44,21 +45,27 @@ const NavBar = () => {
 
   return (
     <div className={navbar ? 'nav-bar active' : 'nav-bar'}>
-      <NavItem icon={homeIcon} text="Home" />
-      <NavItem icon={userIcon} text="About Me" />
-      <NavItem icon={xmlIcon} text="Projects" />
-      <NavItem icon={mailIcon} text="Contact" />
+      <NavItem icon={homeIcon} text="Home" section="#home" />
+      <NavItem icon={userIcon} text="About Me" section="#about" />
+      <NavItem icon={xmlIcon} text="Projects" section="#projects" />
+      <NavItem icon={mailIcon} text="Contact" section="#contact" />
     </div>
   );
-};
+}
 
-const NavItem = ({ icon, text }) => {
+function NavItem({ icon, text, section }) {
   return (
-    <div className="nav-item">
+    <a className="nav-item" href={section}>
       <img src={icon} alt={text} className="nav-icon" />
       <span className="nav-text">{text}</span>
-    </div>
+    </a>
   );
+}
+
+NavItem.propTypes = {
+  icon: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  section: PropTypes.string.isRequired,
 };
 
 export default Content;

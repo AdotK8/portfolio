@@ -1,3 +1,4 @@
+import React from 'react'; // Import React to fix 'React' must be in scope when using JSX errors
 import './styles/about.scss';
 import babelIcon from './assets/babel.svg';
 import cssIcon from './assets/css.svg';
@@ -31,12 +32,13 @@ const icons = [
   { src: babelIcon, name: 'Babel' },
 ];
 
-const About = () => {
+// Change to function declaration
+function About() {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <div className="about-text-container">
         <h1>
-          If I don't know it, <span>I figure it out</span>
+          If I don&apos;t know it, <span>I figure it out</span>
         </h1>
         <p>
           Committed to the idea of life-long learning, I am passionate about web
@@ -68,6 +70,6 @@ const About = () => {
       </div>
     </section>
   );
-};
+}
 
 export default About;

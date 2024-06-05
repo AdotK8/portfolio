@@ -18,7 +18,8 @@
     var(--color-dark-purple-1),
     var(--color-dark-purple-2),
     var(--color-dark-purple-3)
-  ); /* Fallback gradient */
+  );
+  // Fallback gradient
   background: -webkit-radial-gradient(
     circle at center,
     var(--color-dark-purple-1),
@@ -74,7 +75,6 @@
 }
 
 //scss for shapes in background
-
 .shape-container {
   position: absolute;
   top: 0;

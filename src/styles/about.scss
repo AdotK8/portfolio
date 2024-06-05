@@ -1,9 +1,11 @@
+@import './colors.scss';
+
 .about-section {
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -3rem;
+  padding-top: 2rem;
   text-align: justify;
   gap: 1rem;
 
@@ -27,7 +29,7 @@
     > p,
     h1 {
       > span {
-        color: rgb(180, 100, 241);
+        color: $main-purple-tone;
       }
     }
   }

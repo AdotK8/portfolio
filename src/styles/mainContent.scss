@@ -1,3 +1,4 @@
+@import './colors.scss';
 .scrollable-content {
   position: relative;
   z-index: 100;
@@ -12,7 +13,6 @@
     flex-direction: column;
     position: relative;
     z-index: 1;
-    // height: 425vh;
     width: 100vw;
   }
 }
@@ -45,6 +45,16 @@
     align-items: center;
     margin-right: 20px;
     margin-left: 2rem;
+    text-decoration: none;
+    transition:
+      transform 0.3s ease,
+      fill 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+      color: $main-purple-tone;
+      text-decoration: none;
+    }
 
     > .nav-icon {
       width: 30px;
@@ -73,7 +83,7 @@
       text-align: center;
 
       > .nav-text {
-        display: none; // Hide the text on smaller screens
+        display: none;
       }
 
       > .nav-icon {

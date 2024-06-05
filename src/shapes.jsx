@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Shapes = () => {
+function Shapes() {
   return (
     <div className="shape-container">
       <div className="shape1 shape"></div>
@@ -13,6 +13,6 @@ const Shapes = () => {
       <div className="shape8 shape"></div>
     </div>
   );
-};
+}
 
 export default Shapes;
