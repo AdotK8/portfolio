@@ -5,13 +5,13 @@ import yasePropertyImage from './assets/yase-property.png';
 
 const projectsArray = [
   {
-    name: 'Yase Property Valuation Widget',
+    name: 'Yase Property (Valuation Widget) - Live Company',
     codeLink: 'google.com',
     liveLink: 'google.com',
     image: yasePropertyImage,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    subheader: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+      'Property Valuations Calculator embedded onto WIX created website via iframes. Provides prospective clients sale and rental estimates via propertydata api. Utilises nodemailer to send automated emails to both client and internal sales team. Deployed using Heorku. ',
+    subheader: 'Javascript, Node, SASS, HTML, Heroku',
   },
   {
     name: 'CV Application',
@@ -19,8 +19,8 @@ const projectsArray = [
     liveLink: 'https://cv-application-c680e5d1f0ee.herokuapp.com/',
     image: cvApplicationImage,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    subheader: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+      'Simple CV builder application using react. User is able to add, edit and delete information which is then displayed to the user in real time in the visualization section.',
+    subheader: 'Javascript, React, SASS, HTML, Heroku',
   },
   {
     name: 'Memory Card Game',
@@ -28,8 +28,8 @@ const projectsArray = [
     liveLink: 'https://memory-card-3716161eff09.herokuapp.com/',
     image: memoryCardImage,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    subheader: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+      'A retro themed pokemon themed memory game. Features all original 151 pokemon via PokeAPI. Users must click on a new pokemon on each turn until each round is complete, then new round with more pokemon starts. Users are also able to set their own high scores.',
+    subheader: 'Javascript, React, SASS, HTML, Heroku',
   },
   {
     name: 'Battleship Game',
@@ -37,8 +37,8 @@ const projectsArray = [
     liveLink: 'https://adotk8.github.io/battleship/',
     image: battleshipImage,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    subheader: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+      'Classic battleship game versus AI built using vanilla Javascript and robust testing using TDD (Jest). Animations and sfx included.  ',
+    subheader: 'Javascript, CSS, HTML',
   },
 ];
 
