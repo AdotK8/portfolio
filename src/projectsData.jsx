@@ -5,15 +5,18 @@ import yasePropertyImage from './assets/yase-property.png';
 
 const projectsArray = [
   {
+    id: 1,
     name: 'Yase Property (Valuation Widget) - Live Company',
-    codeLink: 'google.com',
+    backendLink: 'https://github.com/AdotK8/backend-valuation',
+    frontendLink: 'https://github.com/AdotK8/yase-valuation-tool',
     liveLink: 'google.com',
     image: yasePropertyImage,
     description:
-      'Property Valuations Calculator embedded onto WIX created website via iframes. Provides prospective clients sale and rental estimates via propertydata api. Utilises nodemailer to send automated emails to both client and internal sales team. Deployed using Heorku. ',
+      'Property Valuations Calculator embedded onto WIX created website via iframes. Provides prospective clients sale and rental estimates via propertydata api. Utilises nodemailer to send automated emails to both client and internal sales team. Deployed using Heorku.',
     subheader: 'Javascript, Node, SASS, HTML, Heroku',
   },
   {
+    id: 2,
     name: 'CV Application',
     codeLink: 'https://github.com/AdotK8/cv-application',
     liveLink: 'https://cv-application-c680e5d1f0ee.herokuapp.com/',
@@ -23,6 +26,7 @@ const projectsArray = [
     subheader: 'Javascript, React, SASS, HTML, Heroku',
   },
   {
+    id: 3,
     name: 'Memory Card Game',
     codeLink: 'https://github.com/AdotK8/memory-card',
     liveLink: 'https://memory-card-3716161eff09.herokuapp.com/',
@@ -32,6 +36,7 @@ const projectsArray = [
     subheader: 'Javascript, React, SASS, HTML, Heroku',
   },
   {
+    id: 4,
     name: 'Battleship Game',
     codeLink: 'https://github.com/AdotK8/battleship',
     liveLink: 'https://adotk8.github.io/battleship/',

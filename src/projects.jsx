@@ -35,16 +35,20 @@ function Projects() {
     });
   }, []);
 
-  const handleClick = (e, link) => {
+  const handleClick = (e, project) => {
     e.preventDefault();
-    window.open(link, '_blank', 'noopener,noreferrer');
+    if (project.name.includes('Yase Property')) {
+      window.open(project.backendLink, '_blank', 'noopener,noreferrer');
+      window.open(project.frontendLink, '_blank', 'noopener,noreferrer');
+    } else {
+      window.open(project.codeLink, '_blank', 'noopener,noreferrer');
+    }
   };
 
   return (
     <section ref={sectionRef} className="projects-section" id="projects">
       {projectsArray.map((project) => (
         <div key={project.id} className="project">
-          {' '}
           <div className="project-left">
             <img
               className="project-image"
@@ -60,7 +64,7 @@ function Projects() {
               <p>{project.subheader}</p>
               <div className="project-icon-container">
                 <a
-                  onClick={(e) => handleClick(e, project.liveLink)}
+                  onClick={(e) => handleClick(e, project)}
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -70,10 +74,11 @@ function Projects() {
                     src={playIcon}
                     className="project-icon"
                     alt="Play Icon"
-                  />{' '}
+                  />
                 </a>
 
                 <a
+                  onClick={(e) => handleClick(e, project)}
                   href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -83,7 +88,7 @@ function Projects() {
                     src={githubIcon}
                     className="project-icon"
                     alt="GitHub Icon"
-                  />{' '}
+                  />
                 </a>
               </div>
             </div>
