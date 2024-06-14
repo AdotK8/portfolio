@@ -9,7 +9,7 @@ const projectsArray = [
     name: 'Yase Property (Valuation Widget) - Live Company',
     backendLink: 'https://github.com/AdotK8/backend-valuation',
     frontendLink: 'https://github.com/AdotK8/yase-valuation-tool',
-    liveLink: 'google.com',
+    liveLink: 'https://www.yaseproperty.com/',
     image: yasePropertyImage,
     description:
       'Property Valuations Calculator embedded onto WIX created website via iframes. Provides prospective clients sale and rental estimates via propertydata api. Utilises nodemailer to send automated emails to both client and internal sales team. Deployed using Heorku.',
@@ -17,24 +17,25 @@ const projectsArray = [
   },
   {
     id: 2,
-    name: 'CV Application',
-    codeLink: 'https://github.com/AdotK8/cv-application',
-    liveLink: 'https://cv-application-c680e5d1f0ee.herokuapp.com/',
-    image: cvApplicationImage,
-    description:
-      'Simple CV builder application using react. User is able to add, edit and delete information which is then displayed to the user in real time in the visualization section.',
-    subheader: 'Javascript, React, SASS, HTML, Heroku',
-  },
-  {
-    id: 3,
     name: 'Memory Card Game',
     codeLink: 'https://github.com/AdotK8/memory-card',
-    liveLink: 'https://memory-card-3716161eff09.herokuapp.com/',
+    liveLink: 'https://frabjous-palmier-1b298d.netlify.app/',
     image: memoryCardImage,
     description:
       'A retro themed pokemon themed memory game. Features all original 151 pokemon via PokeAPI. Users must click on a new pokemon on each turn until each round is complete, then new round with more pokemon starts. Users are also able to set their own high scores.',
     subheader: 'Javascript, React, SASS, HTML, Heroku',
   },
+  {
+    id: 3,
+    name: 'CV Application',
+    codeLink: 'https://github.com/AdotK8/cv-application',
+    liveLink: 'https://deft-tarsier-6e911c.netlify.app/',
+    image: cvApplicationImage,
+    description:
+      'Simple CV builder application using react. User is able to add, edit and delete information which is then displayed to the user in real time in the visualization section.',
+    subheader: 'Javascript, React, SASS, HTML, Heroku',
+  },
+
   {
     id: 4,
     name: 'Battleship Game',

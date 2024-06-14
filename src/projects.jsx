@@ -35,7 +35,12 @@ function Projects() {
     });
   }, []);
 
-  const handleClick = (e, project) => {
+  const handleLiveClick = (e, liveLink) => {
+    e.preventDefault();
+    window.open(liveLink, '_blank', 'noopener,noreferrer');
+  };
+
+  const handleCodeClick = (e, project) => {
     e.preventDefault();
     if (project.name.includes('Yase Property')) {
       window.open(project.backendLink, '_blank', 'noopener,noreferrer');
@@ -64,7 +69,7 @@ function Projects() {
               <p>{project.subheader}</p>
               <div className="project-icon-container">
                 <a
-                  onClick={(e) => handleClick(e, project)}
+                  onClick={(e) => handleLiveClick(e, project.liveLink)}
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -78,7 +83,7 @@ function Projects() {
                 </a>
 
                 <a
-                  onClick={(e) => handleClick(e, project)}
+                  onClick={(e) => handleCodeClick(e, project)}
                   href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
