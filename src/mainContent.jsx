@@ -4,7 +4,7 @@ import userIcon from './assets/account-outline.svg';
 import xmlIcon from './assets/xml.svg';
 import homeIcon from './assets/home-outline.svg';
 import mailIcon from './assets/email-outline.svg';
-import Home from './home';
+import Home from './home.jsx';
 import About from './about';
 import Projects from './projects';
 import Contact from './contact';
