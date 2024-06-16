@@ -13,7 +13,7 @@ const projectsArray = [
     image: yasePropertyImage,
     description:
       'Property Valuations Calculator embedded onto WIX created website via iframes. Provides prospective clients sale and rental estimates via propertydata api. Utilises nodemailer to send automated emails to both client and internal sales team. Deployed using Heorku.',
-    subheader: 'Javascript, Node, SASS, HTML, Heroku',
+    subheader: 'Javascript, Node, SASS, HTML, Netlify',
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const projectsArray = [
     image: memoryCardImage,
     description:
       'A retro themed pokemon themed memory game. Features all original 151 pokemon via PokeAPI. Users must click on a new pokemon on each turn until each round is complete, then new round with more pokemon starts. Users are also able to set their own high scores.',
-    subheader: 'Javascript, React, SASS, HTML, Heroku',
+    subheader: 'Javascript, React, SASS, HTML, Netlify',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const projectsArray = [
     image: cvApplicationImage,
     description:
       'Simple CV builder application using react. User is able to add, edit and delete information which is then displayed to the user in real time in the visualization section.',
-    subheader: 'Javascript, React, SASS, HTML, Heroku',
+    subheader: 'Javascript, React, SASS, HTML, Netlify',
   },
 
   {
