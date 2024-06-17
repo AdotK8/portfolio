@@ -14,6 +14,7 @@ import prettierIcon from './assets/prettier.svg';
 import reactIcon from './assets/react.svg';
 import sassIcon from './assets/sass.svg';
 import webpackIcon from './assets/webpack.svg';
+import netlifyIcon from './assets/netlify.svg';
 
 const icons = [
   { src: htmlIcon, name: 'HTML' },
@@ -25,6 +26,7 @@ const icons = [
   { src: gitIcon, name: 'Git' },
   { src: eslintIcon, name: 'ESLint' },
   { src: herokuIcon, name: 'Heroku' },
+  { src: netlifyIcon, name: 'Netlify' },
   { src: jestIcon, name: 'Jest' },
   { src: npmIcon, name: 'npm' },
   { src: webpackIcon, name: 'Webpack' },
