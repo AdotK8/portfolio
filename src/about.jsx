@@ -15,6 +15,8 @@ import reactIcon from './assets/react.svg';
 import sassIcon from './assets/sass.svg';
 import webpackIcon from './assets/webpack.svg';
 import netlifyIcon from './assets/netlify.svg';
+import mongoIcon from './assets/mongo.svg';
+import expressIcon from './assets/express.svg';
 
 const icons = [
   { src: htmlIcon, name: 'HTML' },
@@ -23,6 +25,8 @@ const icons = [
   { src: sassIcon, name: 'Sass' },
   { src: nodejsIcon, name: 'Node.js' },
   { src: reactIcon, name: 'React' },
+  { src: mongoIcon, name: 'MongoDB' },
+  { src: expressIcon, name: 'Express' },
   { src: gitIcon, name: 'Git' },
   { src: eslintIcon, name: 'ESLint' },
   { src: herokuIcon, name: 'Heroku' },
