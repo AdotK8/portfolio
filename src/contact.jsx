@@ -1,9 +1,8 @@
 import React from 'react';
 import './styles/contact.scss';
-import avatarIcon from './assets/avatar.svg';
 import profileImage from './assets/profile-image.png';
 import githubIcon from './assets/github.svg';
-import linkedinIcon from './assets/linkedin.svg';
+import cvIcon from './assets/cv.png';
 
 function Contact() {
   return (
@@ -16,8 +15,21 @@ function Contact() {
       </p>
       <h2>ahmedkhan895.ak@gmail.com</h2>
       <div className="icon-container">
-        <img src={githubIcon} alt="GitHub" />
-        <img src={linkedinIcon} alt="LinkedIn" />
+        <a
+          href="https://github.com/AdotK8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={githubIcon} alt="GitHub" />
+        </a>
+
+        <a
+          href="https://github.com/AdotK8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={cvIcon} alt="CV" />
+        </a>
       </div>
     </section>
   );

@@ -2,21 +2,34 @@ import cvApplicationImage from './assets/cv-application.png';
 import battleshipImage from './assets/battleship.png';
 import memoryCardImage from './assets/memory-card.png';
 import yasePropertyImage from './assets/yase-property.png';
+import yaseDatabaseImage from './assets/yase-database.png';
 
 const projectsArray = [
   {
     id: 1,
-    name: 'Yase Property (Valuation Widget) - Live Company',
-    backendLink: 'https://github.com/AdotK8/backend-valuation',
-    frontendLink: 'https://github.com/AdotK8/yase-valuation-tool',
-    liveLink: 'https://www.yaseproperty.com/',
-    image: yasePropertyImage,
+    name: 'Yase Property (Database & Property Matching Tool) - Active Company',
+    backendLink: 'https://github.com/AdotK8/crud-backend',
+    frontendLink: 'https://github.com/AdotK8/crud-frontend',
+    liveLink: 'https://yase-databae.netlify.app/',
+    image: yaseDatabaseImage,
     description:
-      'Property Valuations Calculator embedded onto WIX created website via iframes. Provides prospective clients sale and rental estimates via propertydata api. Utilises nodemailer to send automated emails to both client and internal sales team. Deployed using Heorku.',
-    subheader: 'Javascript, Node, SASS, HTML, Netlify',
+      'This is a web application developed for Yase Property to streamline the work of real estate sales consultants. The app allows users to browse, filter, and manage a database of property developments, create new listings, and update property details. It includes a property matching tool that sends personalized property selections to clients via email. Additionally, the app integrates Google Maps for visualizing properties. The frontend communicates with a RESTful API backend built using the MERN stack, offering a smooth, user-friendly experience for property search and management.',
+    subheader: 'React, NodeJS, Express, MongoDB, SASS, Jest, Netlify, Heroku',
   },
+
   {
     id: 2,
+    name: 'Yase Property (Valuation Widget) - Active Company',
+    backendLink: 'https://github.com/AdotK8/crud-backend',
+    frontendLink: 'https://github.com/AdotK8/yase-valuation-tool',
+    liveLink: 'https://www.yaseproperty.com/freeappraisal',
+    image: yasePropertyImage,
+    description:
+      'This is a web widget created for Yase Property to offer clients instant property valuations. Integrated into the Yase Property website, it helps attract potential landlords by providing quick estimates for property sale and rental values. The widget communicates with a RESTful API backend built with the MERN stack and sends automated emails with valuation results to clients and the Yase team. It is built using vanilla JavaScript, designed for mobile responsiveness, and seamlessly integrated into the website.',
+    subheader: 'Javascript, NodeJS, SASS, Netlify, Heroku',
+  },
+  {
+    id: 3,
     name: 'Memory Card Game',
     codeLink: 'https://github.com/AdotK8/memory-card',
     liveLink: 'https://frabjous-palmier-1b298d.netlify.app/',
@@ -26,7 +39,7 @@ const projectsArray = [
     subheader: 'Javascript, React, SASS, HTML, Netlify',
   },
   {
-    id: 3,
+    id: 4,
     name: 'CV Application',
     codeLink: 'https://github.com/AdotK8/cv-application',
     liveLink: 'https://deft-tarsier-6e911c.netlify.app/',
@@ -37,7 +50,7 @@ const projectsArray = [
   },
 
   {
-    id: 4,
+    id: 5,
     name: 'Battleship Game',
     codeLink: 'https://github.com/AdotK8/battleship',
     liveLink: 'https://adotk8.github.io/battleship/',

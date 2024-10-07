@@ -17,6 +17,7 @@ import webpackIcon from './assets/webpack.svg';
 import netlifyIcon from './assets/netlify.svg';
 import mongoIcon from './assets/mongo.svg';
 import expressIcon from './assets/express.svg';
+import viteIcon from './assets/vite.png';
 
 const icons = [
   { src: htmlIcon, name: 'HTML' },
@@ -31,6 +32,7 @@ const icons = [
   { src: eslintIcon, name: 'ESLint' },
   { src: herokuIcon, name: 'Heroku' },
   { src: netlifyIcon, name: 'Netlify' },
+  { src: viteIcon, name: 'Vite' },
   { src: jestIcon, name: 'Jest' },
   { src: npmIcon, name: 'npm' },
   { src: webpackIcon, name: 'Webpack' },
