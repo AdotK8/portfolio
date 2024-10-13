@@ -24,7 +24,7 @@ function Contact() {
         </a>
 
         <a
-          href="https://github.com/AdotK8"
+          href="https://drive.google.com/file/d/1WtWk-LOKgvoR1LPVAjaL2wBIlTwJpldz/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
