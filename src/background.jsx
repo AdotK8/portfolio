@@ -2,18 +2,15 @@ import React, { useEffect } from 'react';
 import './styles/background.scss';
 
 function BackgroundStars() {
-  // Function to generate random size class for stars
+  //funciton to generate random stars for background
   const getRandomSize = () => {
     const sizes = ['s', 'm', 'l', 'xl'];
     return sizes[Math.floor(Math.random() * sizes.length)];
   };
 
-  useEffect(() => {
-    const numStars = 350;
+  const createStars = (numStars, width, height) => {
     const container = document.querySelector('.background-stars');
-    const width = container.offsetWidth;
-    const height = container.offsetHeight;
-
+    container.innerHTML = '';
     for (let i = 0; i < numStars; i += 1) {
       const star = document.createElement('div');
       star.className = 'star';
@@ -22,8 +19,23 @@ function BackgroundStars() {
       star.style.top = `${Math.random() * height}px`;
       container.appendChild(star);
     }
+  };
+
+  useEffect(() => {
+    const numStars = 350;
+    const container = document.querySelector('.background-stars');
+
+    const updateStars = () => {
+      const width = container.offsetWidth;
+      const height = container.offsetHeight;
+      createStars(numStars, width, height);
+    };
+
+    updateStars();
+    window.addEventListener('resize', updateStars);
 
     return () => {
+      window.removeEventListener('resize', updateStars);
       container.innerHTML = '';
     };
   }, []);
