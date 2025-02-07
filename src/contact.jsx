@@ -24,7 +24,7 @@ function Contact() {
         </a>
 
         <a
-          href="https://drive.google.com/file/d/1Rl3-JmiWJTaxOsevVdz6IgTKM0Qdfg24/view?usp=sharing"
+          href="https://drive.google.com/file/d/1nJEFnhZNGg1NyWhGCQGu6jF3v1XR8FR_/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
