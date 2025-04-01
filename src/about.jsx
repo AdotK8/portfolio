@@ -18,11 +18,13 @@ import netlifyIcon from './assets/netlify.svg';
 import mongoIcon from './assets/mongo.svg';
 import expressIcon from './assets/express.svg';
 import viteIcon from './assets/vite.png';
+import typescriptIcon from './assets/typescript.svg';
 
 const icons = [
   { src: htmlIcon, name: 'HTML' },
   { src: cssIcon, name: 'CSS' },
   { src: jsIcon, name: 'JavaScript' },
+  { src: typescriptIcon, name: 'TypeScript' },
   { src: sassIcon, name: 'Sass' },
   { src: nodejsIcon, name: 'Node.js' },
   { src: reactIcon, name: 'React' },
