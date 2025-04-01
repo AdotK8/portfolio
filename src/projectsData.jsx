@@ -3,6 +3,7 @@ import battleshipImage from './assets/battleship.png';
 import memoryCardImage from './assets/memory-card.png';
 import yasePropertyImage from './assets/yase-property.png';
 import yaseDatabaseImage from './assets/yase-database.png';
+import canvasImage from './assets/canvas.png';
 
 const projectsArray = [
   {
@@ -28,8 +29,19 @@ const projectsArray = [
       'This is a web widget created for Yase Property to offer clients instant property valuations. Integrated into the Yase Property website, it helps attract potential landlords by providing quick estimates for property sale and rental values. The widget communicates with a RESTful API backend built with the MERN stack and sends automated emails with valuation results to clients and the Yase team. It is built using vanilla JavaScript, designed for mobile responsiveness, and seamlessly integrated into the website.',
     subheader: 'Javascript, NodeJS, SASS, Netlify, Heroku',
   },
+
   {
     id: 3,
+    name: 'Canvas Editing App - Active Business',
+    codeLink: 'https://github.com/AdotK8/photo-editor',
+    liveLink: 'https://benevolent-queijadas-a0d2ed.netlify.app/',
+    image: canvasImage,
+    description:
+      'A web app for creating custom canvas designs for an Etsy store, allowing users to add numbers, images, and text with full customization. Features include image manipulation (drag, resize, flip), text styling, and PDF export for printing, built with React and KonvaJS.',
+    subheader: 'Typescript, React, KonvaJS, SASS, Netlify',
+  },
+  {
+    id: 4,
     name: 'Memory Card Game',
     codeLink: 'https://github.com/AdotK8/memory-card',
     liveLink: 'https://frabjous-palmier-1b298d.netlify.app/',
@@ -39,7 +51,7 @@ const projectsArray = [
     subheader: 'Javascript, React, SASS, HTML, Netlify',
   },
   {
-    id: 4,
+    id: 5,
     name: 'CV Application',
     codeLink: 'https://github.com/AdotK8/cv-application',
     liveLink: 'https://deft-tarsier-6e911c.netlify.app/',
@@ -50,7 +62,7 @@ const projectsArray = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: 'Battleship Game',
     codeLink: 'https://github.com/AdotK8/battleship',
     liveLink: 'https://adotk8.github.io/battleship/',
